@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalpadeep Cafe & Restaurant</title>
+    <link rel="icon" type="image/png" href="assets/kalpadeep_cafe_logo.webp">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v=3.0">
+</head>
+
+<body class="no-scroll">
+    <!-- Preloader Screen -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <h1 class="preloader-title">Welcome to <br><span class="highlight">Kalpadeep<br>Cafe & Restaurant</span></h1>
+            <div class="preloader-loader">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="assets/kalpadeep_cafe_logo.webp" alt="Kalpadeep Cafe & Restaurant Logo" class="logo-brand-img">
+            <div class="logo-text-wrapper">
+                <span class="animated-football-header" title="Ganesh Chaturthi Special">
+                    <img src="assets/ganesh_run_icon.webp" alt="Ganesh Run Icon" style="object-fit: contain; filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.6));">
+                </span>
+                <div class="logo-text">
+                    <span class="logo-line-1" style="color: #000000 !important; -webkit-text-fill-color: #000000 !important; background: none !important;">Kalpadeep</span>
+                    <span class="logo-line-2" style="color: #111111 !important; -webkit-text-fill-color: #111111 !important; background: none !important;">Cafe & Restaurant</span>
+                </div>
+            </div>
+        </div>
+        <span class="rath-yatra-header-text">শুভ গণেশ চতুর্থী!</span>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <!-- Rakhi Purnima Button for Poster -->
+            <button class="fifa-btn" id="open-promo-modal-direct-btn" title="Show Ganesh Chaturthi Special Poster">
+                <div class="fifa-container">
+                    <div class="fifa-magic-ring"></div>
+                    <img src="assets/ganesh_icon.webp" alt="Ganesh Special" class="fifa-svg" style="object-fit: contain;">
+                </div>
+            </button>
+
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg banner-box">
+            <img src="assets/aj_restaurant_banner_1.webp" alt="Kalpadeep Cafe & Restaurant Banner" class="active">
+            <img src="assets/banner_1.webp" alt="Kalpadeep Cafe & Restaurant Banner 1">
+            <img src="assets/banner_2.webp" alt="Kalpadeep Cafe & Restaurant Banner 2">
+            <img src="assets/banner_3.webp" alt="Kalpadeep Cafe & Restaurant Banner 3">
+            <img src="assets/banner_4.webp" alt="Kalpadeep Cafe & Restaurant Banner 4">
+            <div class="overlay"></div>
+        </div>
+        <!-- Click/Hover Zones for Banner Control -->
+        <div class="hero-nav-zone left-zone" title="Previous Image"></div>
+        <div class="hero-nav-zone right-zone" title="Next Image"></div>
+    </section>
+
+    <!-- Digital Restaurant Menu Section -->
+    <section id="menu" class="main-menu-section">
+        <div class="menu-header-wrapper">
+            <div class="menu-eyebrow-container">
+                <span class="menu-eyebrow">আমাদের স্পেশাল মেনু (Our Menu)</span>
+            </div>
+        </div>
+
+        <!-- Menu Category Filter Tabs -->
+        <!-- Menu Category Filter Dropdown (Three-Dot Filter Menu) -->
+        <!-- Menu Filter and Zoom Controls Row -->
+        <div class="menu-filter-controls-row">
+            <div class="menu-filter-dropdown-wrapper" id="main-menu-filter-dropdown-wrapper">
+                <button type="button" class="menu-filter-dots-btn" id="main-menu-filter-dots-btn" aria-expanded="false"
+                    aria-haspopup="true" title="Filter Menu">
+                    <span class="three-dots-icon-box">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </span>
+                    <span class="current-filter-label" id="main-current-filter-label">
+                        <i class="fas fa-utensils"></i>
+                        <span>All Items</span>
+                    </span>
+                    <i class="fas fa-chevron-down filter-dropdown-arrow"></i>
+                </button>
+
+                <!-- Dropdown List of Category Filter Options -->
+                <div class="menu-filter-dropdown-menu" id="main-menu-filter-dropdown-menu">
+                    <div class="menu-filter-dropdown-header">
+                        <span><i class="fas fa-filter"></i> Filter Category</span>
+                    </div>
+                    <div class="menu-filter-dropdown-list">
+                        <button type="button" class="menu-tab-btn active" data-category="all">
+                            <span class="tab-btn-content">
+                                <i class="fas fa-utensils tab-icon"></i>
+                                <span class="tab-title">All Items</span>
+                            </span>
+                            <i class="fas fa-check active-indicator-icon"></i>
+                        </button>
+                        <button type="button" class="menu-tab-btn" data-category="starters">
+                            <span class="tab-btn-content">
+                                <i class="fas fa-drumstick-bite tab-icon"></i>
+                                <span class="tab-title">Starters</span>
+                            </span>
+                            <i class="fas fa-check active-indicator-icon"></i>
+                        </button>
+                        <button type="button" class="menu-tab-btn" data-category="noodles">
+                            <span class="tab-btn-content">
+                                <i class="fas fa-bowl-food tab-icon"></i>
+                                <span class="tab-title">Noodles</span>
+                            </span>
+                            <i class="fas fa-check active-indicator-icon"></i>
+                        </button>
+                        <button type="button" class="menu-tab-btn" data-category="rice">
+                            <span class="tab-btn-content">
+                                <i class="fas fa-bowl-rice tab-icon"></i>
+                                <span class="tab-title">Rice & Biriyani</span>
+                            </span>
+                            <i class="fas fa-check active-indicator-icon"></i>
+                        </button>
+                        <button type="button" class="menu-tab-btn" data-category="combo">
+                            <span class="tab-btn-content">
+                                <i class="fas fa-box-open tab-icon"></i>
+                                <span class="tab-title">Combos</span>
+                            </span>
+                            <i class="fas fa-check active-indicator-icon"></i>
+                        </button>
+                        <button type="button" class="menu-tab-btn" data-category="beverages">
+                            <span class="tab-btn-content">
+                                <i class="fas fa-mug-hot tab-icon"></i>
+                                <span class="tab-title">Beverages</span>
+                            </span>
+                            <i class="fas fa-check active-indicator-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zoom Full Menu Button on Right Side of Filter -->
+            <button type="button" class="menu-zoom-img-btn" id="open-full-menu-modal-btn"
+                title="Open Complete Menu Card (সম্পূর্ণ মেনু)">
+                <img src="assets/zoom_full_menu_icon.webp" alt="Zoom Full Menu" class="zoom-full-menu-img">
+            </button>
+        </div>
+
+
+        <!-- Menu Cards Horizontal Side-Scroll Wrapper -->
+        <div class="main-menu-scroll-wrapper">
+            <div class="main-menu-scroll-track" id="main-restaurant-menu-scroll">
+                <!-- Chicken Pakora (6 pcs) -->
+                <div class="food-menu-card" data-category="starters">
+                    <div class="food-card-badge popular">Crispy</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_chicken_pakora.webp" alt="Chicken Pakora (6 pcs)" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Chicken Pakora (6 pcs)</h3>
+                        <span class="bengali-title">চিকেন পকোড়া (৬ পিস)</span>
+                        <span class="food-price">&#8377;150</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Chicken%20Pakora%20(6%20pcs)%20(₹150)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Chicken Lollipop (4 pcs) -->
+                <div class="food-menu-card" data-category="starters">
+                    <div class="food-card-badge bestseller">Bestseller</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_chicken_lollipop.webp" alt="Chicken Lollipop (4 pcs)" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Chicken Lollipop (4 pcs)</h3>
+                        <span class="bengali-title">চিকেন ললিপপ (৪ পিস)</span>
+                        <span class="food-price">&#8377;160</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Chicken%20Lollipop%20(4%20pcs)%20(₹160)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Drums Of Heaven (5 pcs) -->
+                <div class="food-menu-card" data-category="starters">
+                    <div class="food-card-badge special">Special</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_drums_of_heaven.webp" alt="Drums Of Heaven (5 pcs)" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Drums Of Heaven (5 pcs)</h3>
+                        <span class="bengali-title">ড্রামস অফ হেভেন (৫ পিস)</span>
+                        <span class="food-price">&#8377;200</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Drums%20Of%20Heaven%20(5%20pcs)%20(₹200)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Chicken Finger (6 pcs) -->
+                <div class="food-menu-card" data-category="starters">
+                    <div class="food-card-badge popular">Popular</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_chicken_finger.webp" alt="Chicken Finger (6 pcs)" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Chicken Finger (6 pcs)</h3>
+                        <span class="bengali-title">চিকেন ফিঙ্গার (৬ পিস)</span>
+                        <span class="food-price">&#8377;170</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Chicken%20Finger%20(6%20pcs)%20(₹170)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Crispy Chicken -->
+                <div class="food-menu-card" data-category="starters">
+                    <div class="food-card-badge bestseller">Crunchy</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_crispy_chicken.webp" alt="Crispy Chicken" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Crispy Chicken</h3>
+                        <span class="bengali-title">ক্রিস্পি চিকেন</span>
+                        <span class="food-price">&#8377;180</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Crispy%20Chicken%20(₹180)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Chilli Chicken (8 pcs) -->
+                <div class="food-menu-card" data-category="starters">
+                    <div class="food-card-badge popular">Popular</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_chilli_chicken.webp" alt="Chilli Chicken (8 pcs)" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Chilli Chicken (8 pcs)</h3>
+                        <span class="bengali-title">চিলি চিকেন (৮ পিস)</span>
+                        <span class="food-price">&#8377;180</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Chilli%20Chicken%20(8%20pcs)%20(₹180)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Garlic Chicken (8 pcs) -->
+                <div class="food-menu-card" data-category="starters">
+                    <div class="food-card-badge special">Semi Gravy</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_garlic_chicken.webp" alt="Garlic Chicken (8 pcs)" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Garlic Chicken (8 pcs)</h3>
+                        <span class="bengali-title">গার্লিক চিকেন (৮ পিস)</span>
+                        <span class="food-price">&#8377;180</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Garlic%20Chicken%20(8%20pcs)%20(₹180)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Hyderabadi Coriander Chicken -->
+                <div class="food-menu-card" data-category="starters">
+                    <div class="food-card-badge chef">Chef Special</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_hyderabadi_coriander_chicken.webp" alt="Hyderabadi Coriander Chicken" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Hyderabadi Coriander Chicken</h3>
+                        <span class="bengali-title">হায়দ্রাবাদি কোরিয়েন্ডার চিকেন</span>
+                        <span class="food-price">&#8377;220</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Hyderabadi%20Coriander%20Chicken%20(₹220)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Paneer Pakora -->
+                <div class="food-menu-card" data-category="starters">
+                    <div class="food-card-badge pure-veg">Pure Veg</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_paneer_pakora.webp" alt="Paneer Pakora" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Paneer Pakora</h3>
+                        <span class="bengali-title">পনির পকোড়া</span>
+                        <span class="food-price">&#8377;160</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Paneer%20Pakora%20(₹160)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Chilli Paneer -->
+                <div class="food-menu-card" data-category="starters">
+                    <div class="food-card-badge pure-veg">Pure Veg</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_chilli_paneer.webp" alt="Chilli Paneer" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Chilli Paneer</h3>
+                        <span class="bengali-title">চিলি পনির</span>
+                        <span class="food-price">&#8377;200</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Chilli%20Paneer%20(₹200)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Crispy Chilli Babycorn -->
+                <div class="food-menu-card" data-category="starters">
+                    <div class="food-card-badge pure-veg">Pure Veg</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_crispy_chilli_babycorn.webp" alt="Crispy Chilli Babycorn" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Crispy Chilli Babycorn</h3>
+                        <span class="bengali-title">ক্রিস্পি চিলি বেবিকর্ন</span>
+                        <span class="food-price">&#8377;180</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Crispy%20Chilli%20Babycorn%20(₹180)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Veg Hakka Noodles -->
+                <div class="food-menu-card" data-category="noodles">
+                    <div class="food-card-badge pure-veg">Pure Veg</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_veg_noodles.webp" alt="Veg Hakka Noodles" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Veg Hakka Noodles</h3>
+                        <span class="bengali-title">ভেজ হাক্কা নুডুলস</span>
+                        <span class="food-price">&#8377;90</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Veg%20Hakka%20Noodles%20(₹90)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Egg Hakka Noodles -->
+                <div class="food-menu-card" data-category="noodles">
+                    <div class="food-card-badge popular">Egg</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_egg_noodles.webp" alt="Egg Hakka Noodles" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Egg Hakka Noodles</h3>
+                        <span class="bengali-title">এগ হাক্কা নুডুলস</span>
+                        <span class="food-price">&#8377;110</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Egg%20Hakka%20Noodles%20(₹110)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Egg Chicken Hakka Noodles -->
+                <div class="food-menu-card" data-category="noodles">
+                    <div class="food-card-badge bestseller">Bestseller</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_egg_chicken_noodles.webp" alt="Egg Chicken Hakka Noodles" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Egg Chicken Hakka Noodles</h3>
+                        <span class="bengali-title">এগ চিকেন হাক্কা নুডুলস</span>
+                        <span class="food-price">&#8377;140</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Egg%20Chicken%20Hakka%20Noodles%20(₹140)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Mixed Hakka Noodles -->
+                <div class="food-menu-card" data-category="noodles">
+                    <div class="food-card-badge special">Special</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_mixed_noodles.webp" alt="Mixed Hakka Noodles" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Mixed Hakka Noodles</h3>
+                        <span class="bengali-title">মিক্সড হাক্কা নুডুলস</span>
+                        <span class="food-price">&#8377;170</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Mixed%20Hakka%20Noodles%20(₹170)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Veg Rice -->
+                <div class="food-menu-card" data-category="rice">
+                    <div class="food-card-badge pure-veg">Pure Veg</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_veg_rice.webp" alt="Veg Rice" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Veg Rice</h3>
+                        <span class="bengali-title">ভেজ রাইস</span>
+                        <span class="food-price">&#8377;110</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Veg%20Rice%20(₹110)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Egg Rice -->
+                <div class="food-menu-card" data-category="rice">
+                    <div class="food-card-badge popular">Egg</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_egg_rice.webp" alt="Egg Rice" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Egg Rice</h3>
+                        <span class="bengali-title">এগ রাইস</span>
+                        <span class="food-price">&#8377;130</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Egg%20Rice%20(₹130)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Egg Chicken Rice -->
+                <div class="food-menu-card" data-category="rice">
+                    <div class="food-card-badge bestseller">Bestseller</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_egg_chicken_rice.webp" alt="Egg Chicken Rice" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Egg Chicken Rice</h3>
+                        <span class="bengali-title">এগ চিকেন রাইস</span>
+                        <span class="food-price">&#8377;160</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Egg%20Chicken%20Rice%20(₹160)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Chicken Biriyani -->
+                <div class="food-menu-card" data-category="rice">
+                    <div class="food-card-badge bestseller">Royal</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_chicken_biriyani.webp" alt="Chicken Biriyani" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Chicken Biriyani</h3>
+                        <span class="bengali-title">চিকেন বিরিয়ানি</span>
+                        <span class="food-price">&#8377;140</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Chicken%20Biriyani%20(₹140)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Mix Rice -->
+                <div class="food-menu-card" data-category="rice">
+                    <div class="food-card-badge special">Special</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_mix_rice.webp" alt="Mix Rice" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Mix Rice</h3>
+                        <span class="bengali-title">মিক্স রাইস</span>
+                        <span class="food-price">&#8377;190</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Mix%20Rice%20(₹190)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Combo 01: Veg Rice + Chilli Paneer -->
+                <div class="food-menu-card" data-category="combo">
+                    <div class="food-card-badge pure-veg">Veg Combo</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_combo_1.webp" alt="Combo 01: Veg Rice + Chilli Paneer" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Combo 01: Veg Rice + Chilli Paneer</h3>
+                        <span class="bengali-title">কম্বো ১: ভেজ রাইস + চিলি পনির</span>
+                        <span class="food-price">&#8377;179</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Combo%2001%20(Veg%20Rice%20%2B%20Chilli%20Paneer)%20(₹179)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Combo 02: Chilli Chicken + Noodles -->
+                <div class="food-menu-card" data-category="combo">
+                    <div class="food-card-badge bestseller">Hot Combo</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_combo_2.webp" alt="Combo 02: Chilli Chicken + Noodles" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Combo 02: Chilli Chicken + Noodles</h3>
+                        <span class="bengali-title">কম্বো ২: চিলি চিকেন + এগ চিকেন নুডুলস</span>
+                        <span class="food-price">&#8377;169</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Combo%2002%20(Chilli%20Chicken%20%2B%20Egg%20Chicken%20Noodles)%20(₹169)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Combo 03: Chilli Chicken + Rice -->
+                <div class="food-menu-card" data-category="combo">
+                    <div class="food-card-badge bestseller">Special Combo</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_combo_3.webp" alt="Combo 03: Chilli Chicken + Rice" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Combo 03: Chilli Chicken + Rice</h3>
+                        <span class="bengali-title">কম্বো ৩: চিলি চিকেন + এগ চিকেন রাইস</span>
+                        <span class="food-price">&#8377;199</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Combo%2003%20(Chilli%20Chicken%20%2B%20Egg%20Chicken%20Rice)%20(₹199)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Combo 04: Paneer Rice + Chilli Paneer -->
+                <div class="food-menu-card" data-category="combo">
+                    <div class="food-card-badge pure-veg">Paneer Combo</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_combo_4.webp" alt="Combo 04: Paneer Rice + Chilli Paneer" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Combo 04: Paneer Rice + Chilli Paneer</h3>
+                        <span class="bengali-title">কম্বো ৪: পনির রাইস + চিলি পনির</span>
+                        <span class="food-price">&#8377;199</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Combo%2004%20(Paneer%20Rice%20%2B%20Chilli%20Paneer)%20(₹199)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Coffee -->
+                <div class="food-menu-card" data-category="beverages">
+                    <div class="food-card-badge popular">Hot</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_coffee.webp" alt="Coffee" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Coffee</h3>
+                        <span class="bengali-title">গরম কফি</span>
+                        <span class="food-price">&#8377;40</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Coffee%20(₹40)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+                <!-- Milk Tea -->
+                <div class="food-menu-card" data-category="beverages">
+                    <div class="food-card-badge popular">Chai</div>
+                    <div class="food-card-img-box">
+                        <img src="assets/menu_milktea.webp" alt="Milk Tea" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Milk Tea</h3>
+                        <span class="bengali-title">মিল্ক টি</span>
+                        <span class="food-price">&#8377;20</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Milk%20Tea%20(₹20)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section (Photo Gallery) -->
+    <section id="reviews" class="reviews-section">
+        <h2 class="section-title">Customer Review Photos</h2>
+        <div class="reviews-slider-container">
+            <div class="reviews-slider">
+                <div class="review-slide active">
+                    <img src="assets/review_1.webp" alt="Customer Review 1">
+                </div>
+                <div class="review-slide">
+                    <img src="assets/review_2.webp" alt="Customer Review 2">
+                </div>
+                <div class="review-slide">
+                    <img src="assets/review_3.webp" alt="Customer Review 3">
+                </div>
+                <div class="review-slide">
+                    <img src="assets/review_4.webp" alt="Customer Review 4">
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+
+            <!-- Slider Dots -->
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <div class="reviews-cta-wrapper">
+                <a href="https://www.facebook.com/profile.php?id=61592465745529&sk=reels_tab" target="_blank" class="modern-maps-btn"
+                    title="View All Review on Facebook Page">
+                    <span class="maps-icon-badge"><i class="fab fa-facebook-f"></i></span>
+                    <span class="maps-btn-text">View All Review on Facebook Page</span>
+                    <span class="maps-arrow-circle"><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact & Socials</h2>
+        <div class="contact-container glassmorphism">
+            <div class="contact-info">
+                <h2>Visit Us</h2>
+                <div class="info-item">
+                    <a href="https://maps.app.goo.gl/2JkvVuaAJued3EWe7" target="_blank"
+                        style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 15px;">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Netaji Subhas Road, Sarkar Para, Nabadwip, West Bengal 741302</p>
+                    </a>
+                </div>
+                <div class="info-item">
+                    <a href="tel:+917001404337"
+                        style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 15px;">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+91 7001404337</p>
+                    </a>
+                </div>
+                <div class="info-item">
+                    <a href="mailto:arijitdebnath213@gmail.com"
+                        style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 15px;">
+                        <i class="fas fa-envelope"></i>
+                        <p>arijitdebnath213@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+            <div class="social-links">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1DiD4dH11K/" target="_blank" class="social-icon" title="Follow on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/917001404337" target="_blank" class="social-icon" title="Chat on WhatsApp"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="https://maps.app.goo.gl/2JkvVuaAJued3EWe7" target="_blank" class="social-icon"
+                        title="View on Google Maps"><i class="fas fa-map-marker-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Kalpadeep Cafe & Restaurant. Made With Dripza</p>
+    </footer>
+
+
+
+    <!-- Full Menu Interactive Modal -->
+    <div class="full-menu-modal" id="full-menu-modal" aria-hidden="true">
+        <div class="full-menu-modal-overlay" id="full-menu-modal-overlay"></div>
+        <div class="full-menu-modal-container">
+            <!-- Modal Sticky Top Header Container (Header + Hero Title + Search + Category Tabs) -->
+            <div class="full-menu-modal-top-section">
+                <!-- Modal Header -->
+                <div class="full-menu-modal-header">
+                    <div class="full-menu-modal-header-left">
+                        <button class="menu-modal-close-btn" id="close-full-menu-modal-btn"
+                            aria-label="Close Full Menu">
+                            <i class="fas fa-arrow-left"></i> <span>Back</span>
+                        </button>
+                        <div class="full-menu-modal-title">
+                            Kalpadeep Cafe & Restaurant
+                        </div>
+                    </div>
+                    <div class="full-menu-modal-header-right">
+                        <a href="#modal-order-hotline" class="menu-modal-timing-btn" id="modal-timing-btn"
+                            title="Go to Bottom (নিচে যান)">
+                            <i class="fas fa-arrow-down"></i> <span>Bottom</span>
+                        </a>
+                        <a href="tel:+917001404337" class="menu-modal-call-btn">
+                            <i class="fas fa-phone-alt"></i> <span>+91 7001404337</span>
+                        </a>
+                        <button class="menu-modal-close-icon-btn" id="close-full-menu-icon-btn" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal Hero Header -->
+                <div class="full-menu-hero">
+                    <h1>Complete Menu Card <span class="bengali-heading">আমাদের সম্পূর্ণ ডিজিটাল মেনু</span></h1>
+                </div>
+
+                <!-- Search Bar & Category Filter Tabs -->
+                <div class="menu-control-bar">
+                    <div class="search-box-wrapper">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="modal-menu-search-input"
+                            placeholder="খাবারের নাম লিখে খুঁজুন (Search dishes...)" autocomplete="off">
+                    </div>
+
+                                        <div class="menu-category-tabs" id="modal-menu-category-tabs">
+                        <button class="menu-tab-btn active" data-category="all">
+                            <i class="fas fa-utensils"></i> All Items
+                        </button>
+                        <button class="menu-tab-btn" data-category="starters">
+                            <i class="fas fa-drumstick-bite"></i> Starters
+                        </button>
+                        <button class="menu-tab-btn" data-category="noodles">
+                            <i class="fas fa-bowl-food"></i> Noodles
+                        </button>
+                        <button class="menu-tab-btn" data-category="rice">
+                            <i class="fas fa-bowl-rice"></i> Rice & Biriyani
+                        </button>
+                        <button class="menu-tab-btn" data-category="combo">
+                            <i class="fas fa-box-open"></i> Combos
+                        </button>
+                        <button class="menu-tab-btn" data-category="beverages">
+                            <i class="fas fa-mug-hot"></i> Beverages
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="full-menu-modal-body">
+                <!-- Complete Menu Card Grid -->
+                <div class="compact-menu-grid-container">
+                    <div class="compact-grid" id="modal-full-menu-grid">
+                        <!-- Chicken Pakora (6 pcs) -->
+                        <div class="food-menu-card" data-category="starters"
+                            data-keywords="chicken pakora 6 pcs starters murgi pakoda kalpadeep">
+                            <div class="food-card-badge popular">Crispy</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_chicken_pakora.webp" alt="Chicken Pakora (6 pcs)" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Chicken Pakora (6 pcs)</h3>
+                                <span class="bengali-title">চিকেন পকোড়া (৬ পিস)</span>
+                                <span class="food-price">&#8377;150</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Chicken%20Pakora%20(6%20pcs)%20(₹150)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Chicken Lollipop (4 pcs) -->
+                        <div class="food-menu-card" data-category="starters"
+                            data-keywords="chicken lollipop 4 pcs oil fry starters kalpadeep">
+                            <div class="food-card-badge bestseller">Bestseller</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_chicken_lollipop.webp" alt="Chicken Lollipop (4 pcs)" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Chicken Lollipop (4 pcs)</h3>
+                                <span class="bengali-title">চিকেন ললিপপ (৪ পিস)</span>
+                                <span class="food-price">&#8377;160</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Chicken%20Lollipop%20(4%20pcs)%20(₹160)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Drums Of Heaven (5 pcs) -->
+                        <div class="food-menu-card" data-category="starters"
+                            data-keywords="drums of heaven 5 pcs starters chicken kalpadeep">
+                            <div class="food-card-badge special">Special</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_drums_of_heaven.webp" alt="Drums Of Heaven (5 pcs)" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Drums Of Heaven (5 pcs)</h3>
+                                <span class="bengali-title">ড্রামস অফ হেভেন (৫ পিস)</span>
+                                <span class="food-price">&#8377;200</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Drums%20Of%20Heaven%20(5%20pcs)%20(₹200)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Chicken Finger (6 pcs) -->
+                        <div class="food-menu-card" data-category="starters"
+                            data-keywords="chicken finger 6 pcs starters finger kalpadeep">
+                            <div class="food-card-badge popular">Popular</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_chicken_finger.webp" alt="Chicken Finger (6 pcs)" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Chicken Finger (6 pcs)</h3>
+                                <span class="bengali-title">চিকেন ফিঙ্গার (৬ পিস)</span>
+                                <span class="food-price">&#8377;170</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Chicken%20Finger%20(6%20pcs)%20(₹170)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Crispy Chicken -->
+                        <div class="food-menu-card" data-category="starters"
+                            data-keywords="crispy chicken starters crunchy chicken kalpadeep">
+                            <div class="food-card-badge bestseller">Crunchy</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_crispy_chicken.webp" alt="Crispy Chicken" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Crispy Chicken</h3>
+                                <span class="bengali-title">ক্রিস্পি চিকেন</span>
+                                <span class="food-price">&#8377;180</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Crispy%20Chicken%20(₹180)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Chilli Chicken (8 pcs) -->
+                        <div class="food-menu-card" data-category="starters"
+                            data-keywords="chilli chicken dry gravy 8 pcs starters kalpadeep">
+                            <div class="food-card-badge popular">Popular</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_chilli_chicken.webp" alt="Chilli Chicken (8 pcs)" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Chilli Chicken (8 pcs)</h3>
+                                <span class="bengali-title">চিলি চিকেন (৮ পিস)</span>
+                                <span class="food-price">&#8377;180</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Chilli%20Chicken%20(8%20pcs)%20(₹180)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Garlic Chicken (8 pcs) -->
+                        <div class="food-menu-card" data-category="starters"
+                            data-keywords="garlic chicken semi gravy 8 pcs starters kalpadeep">
+                            <div class="food-card-badge special">Semi Gravy</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_garlic_chicken.webp" alt="Garlic Chicken (8 pcs)" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Garlic Chicken (8 pcs)</h3>
+                                <span class="bengali-title">গার্লিক চিকেন (৮ পিস)</span>
+                                <span class="food-price">&#8377;180</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Garlic%20Chicken%20(8%20pcs)%20(₹180)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Hyderabadi Coriander Chicken -->
+                        <div class="food-menu-card" data-category="starters"
+                            data-keywords="hyderabadi coriander chicken starters special kalpadeep">
+                            <div class="food-card-badge chef">Chef Special</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_hyderabadi_coriander_chicken.webp" alt="Hyderabadi Coriander Chicken" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Hyderabadi Coriander Chicken</h3>
+                                <span class="bengali-title">হায়দ্রাবাদি কোরিয়েন্ডার চিকেন</span>
+                                <span class="food-price">&#8377;220</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Hyderabadi%20Coriander%20Chicken%20(₹220)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Paneer Pakora -->
+                        <div class="food-menu-card" data-category="starters"
+                            data-keywords="paneer pakora starters veg vegetarian kalpadeep">
+                            <div class="food-card-badge pure-veg">Pure Veg</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_paneer_pakora.webp" alt="Paneer Pakora" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Paneer Pakora</h3>
+                                <span class="bengali-title">পনির পকোড়া</span>
+                                <span class="food-price">&#8377;160</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Paneer%20Pakora%20(₹160)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Chilli Paneer -->
+                        <div class="food-menu-card" data-category="starters"
+                            data-keywords="chilli paneer starters veg vegetarian kalpadeep">
+                            <div class="food-card-badge pure-veg">Pure Veg</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_chilli_paneer.webp" alt="Chilli Paneer" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Chilli Paneer</h3>
+                                <span class="bengali-title">চিলি পনির</span>
+                                <span class="food-price">&#8377;200</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Chilli%20Paneer%20(₹200)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Crispy Chilli Babycorn -->
+                        <div class="food-menu-card" data-category="starters"
+                            data-keywords="crispy chilli babycorn baby corn starters veg kalpadeep">
+                            <div class="food-card-badge pure-veg">Pure Veg</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_crispy_chilli_babycorn.webp" alt="Crispy Chilli Babycorn" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Crispy Chilli Babycorn</h3>
+                                <span class="bengali-title">ক্রিস্পি চিলি বেবিকর্ন</span>
+                                <span class="food-price">&#8377;180</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Crispy%20Chilli%20Babycorn%20(₹180)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Veg Hakka Noodles -->
+                        <div class="food-menu-card" data-category="noodles"
+                            data-keywords="veg hakka noodles chowmein chow noodles veg kalpadeep">
+                            <div class="food-card-badge pure-veg">Pure Veg</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_veg_noodles.webp" alt="Veg Hakka Noodles" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Veg Hakka Noodles</h3>
+                                <span class="bengali-title">ভেজ হাক্কা নুডুলস</span>
+                                <span class="food-price">&#8377;90</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Veg%20Hakka%20Noodles%20(₹90)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Egg Hakka Noodles -->
+                        <div class="food-menu-card" data-category="noodles"
+                            data-keywords="egg hakka noodles chowmein dim egg noodles kalpadeep">
+                            <div class="food-card-badge popular">Egg</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_egg_noodles.webp" alt="Egg Hakka Noodles" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Egg Hakka Noodles</h3>
+                                <span class="bengali-title">এগ হাক্কা নুডুলস</span>
+                                <span class="food-price">&#8377;110</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Egg%20Hakka%20Noodles%20(₹110)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Egg Chicken Hakka Noodles -->
+                        <div class="food-menu-card" data-category="noodles"
+                            data-keywords="egg chicken hakka noodles chowmein murgi dim noodles kalpadeep">
+                            <div class="food-card-badge bestseller">Bestseller</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_egg_chicken_noodles.webp" alt="Egg Chicken Hakka Noodles" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Egg Chicken Hakka Noodles</h3>
+                                <span class="bengali-title">এগ চিকেন হাক্কা নুডুলস</span>
+                                <span class="food-price">&#8377;140</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Egg%20Chicken%20Hakka%20Noodles%20(₹140)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Mixed Hakka Noodles -->
+                        <div class="food-menu-card" data-category="noodles"
+                            data-keywords="mixed hakka noodles mix chowmein chicken egg veg noodles kalpadeep">
+                            <div class="food-card-badge special">Special</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_mixed_noodles.webp" alt="Mixed Hakka Noodles" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Mixed Hakka Noodles</h3>
+                                <span class="bengali-title">মিক্সড হাক্কা নুডুলস</span>
+                                <span class="food-price">&#8377;170</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Mixed%20Hakka%20Noodles%20(₹170)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Veg Rice -->
+                        <div class="food-menu-card" data-category="rice"
+                            data-keywords="veg rice fried rice bhat rice vegetarian kalpadeep">
+                            <div class="food-card-badge pure-veg">Pure Veg</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_veg_rice.webp" alt="Veg Rice" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Veg Rice</h3>
+                                <span class="bengali-title">ভেজ রাইস</span>
+                                <span class="food-price">&#8377;110</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Veg%20Rice%20(₹110)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Egg Rice -->
+                        <div class="food-menu-card" data-category="rice"
+                            data-keywords="egg rice dim fried rice bhat kalpadeep">
+                            <div class="food-card-badge popular">Egg</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_egg_rice.webp" alt="Egg Rice" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Egg Rice</h3>
+                                <span class="bengali-title">এগ রাইস</span>
+                                <span class="food-price">&#8377;130</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Egg%20Rice%20(₹130)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Egg Chicken Rice -->
+                        <div class="food-menu-card" data-category="rice"
+                            data-keywords="egg chicken rice fried rice chicken egg dim bhat kalpadeep">
+                            <div class="food-card-badge bestseller">Bestseller</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_egg_chicken_rice.webp" alt="Egg Chicken Rice" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Egg Chicken Rice</h3>
+                                <span class="bengali-title">এগ চিকেন রাইস</span>
+                                <span class="food-price">&#8377;160</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Egg%20Chicken%20Rice%20(₹160)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Chicken Biriyani -->
+                        <div class="food-menu-card" data-category="rice"
+                            data-keywords="chicken biriyani biryani briyani rice murgi kalpadeep">
+                            <div class="food-card-badge bestseller">Royal</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_chicken_biriyani.webp" alt="Chicken Biriyani" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Chicken Biriyani</h3>
+                                <span class="bengali-title">চিকেন বিরিয়ানি</span>
+                                <span class="food-price">&#8377;140</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Chicken%20Biriyani%20(₹140)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Mix Rice -->
+                        <div class="food-menu-card" data-category="rice"
+                            data-keywords="mix rice mixed fried rice chicken egg veg bhat kalpadeep">
+                            <div class="food-card-badge special">Special</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_mix_rice.webp" alt="Mix Rice" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Mix Rice</h3>
+                                <span class="bengali-title">মিক্স রাইস</span>
+                                <span class="food-price">&#8377;190</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Mix%20Rice%20(₹190)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Combo 01: Veg Rice + Chilli Paneer -->
+                        <div class="food-menu-card" data-category="combo"
+                            data-keywords="combo 01 veg rice chilli paneer combo meals thali kalpadeep">
+                            <div class="food-card-badge pure-veg">Veg Combo</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_combo_1.webp" alt="Combo 01: Veg Rice + Chilli Paneer" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Combo 01: Veg Rice + Chilli Paneer</h3>
+                                <span class="bengali-title">কম্বো ১: ভেজ রাইস + চিলি পনির</span>
+                                <span class="food-price">&#8377;179</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Combo%2001%20(Veg%20Rice%20%2B%20Chilli%20Paneer)%20(₹179)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Combo 02: Chilli Chicken + Noodles -->
+                        <div class="food-menu-card" data-category="combo"
+                            data-keywords="combo 02 chilli chicken egg chicken noodles combo meals kalpadeep">
+                            <div class="food-card-badge bestseller">Hot Combo</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_combo_2.webp" alt="Combo 02: Chilli Chicken + Noodles" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Combo 02: Chilli Chicken + Noodles</h3>
+                                <span class="bengali-title">কম্বো ২: চিলি চিকেন + এগ চিকেন নুডুলস</span>
+                                <span class="food-price">&#8377;169</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Combo%2002%20(Chilli%20Chicken%20%2B%20Egg%20Chicken%20Noodles)%20(₹169)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Combo 03: Chilli Chicken + Rice -->
+                        <div class="food-menu-card" data-category="combo"
+                            data-keywords="combo 03 chilli chicken egg chicken rice combo meals kalpadeep">
+                            <div class="food-card-badge bestseller">Special Combo</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_combo_3.webp" alt="Combo 03: Chilli Chicken + Rice" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Combo 03: Chilli Chicken + Rice</h3>
+                                <span class="bengali-title">কম্বো ৩: চিলি চিকেন + এগ চিকেন রাইস</span>
+                                <span class="food-price">&#8377;199</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Combo%2003%20(Chilli%20Chicken%20%2B%20Egg%20Chicken%20Rice)%20(₹199)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Combo 04: Paneer Rice + Chilli Paneer -->
+                        <div class="food-menu-card" data-category="combo"
+                            data-keywords="combo 04 paneer rice chilli paneer combo meals veg kalpadeep">
+                            <div class="food-card-badge pure-veg">Paneer Combo</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_combo_4.webp" alt="Combo 04: Paneer Rice + Chilli Paneer" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Combo 04: Paneer Rice + Chilli Paneer</h3>
+                                <span class="bengali-title">কম্বো ৪: পনির রাইস + চিলি পনির</span>
+                                <span class="food-price">&#8377;199</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Combo%2004%20(Paneer%20Rice%20%2B%20Chilli%20Paneer)%20(₹199)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Coffee -->
+                        <div class="food-menu-card" data-category="beverages"
+                            data-keywords="coffee hot coffee cafe drink beverage kalpadeep">
+                            <div class="food-card-badge popular">Hot</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_coffee.webp" alt="Coffee" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Coffee</h3>
+                                <span class="bengali-title">গরম কফি</span>
+                                <span class="food-price">&#8377;40</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Coffee%20(₹40)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+                        <!-- Milk Tea -->
+                        <div class="food-menu-card" data-category="beverages"
+                            data-keywords="milk tea chai cha beverage drink kalpadeep">
+                            <div class="food-card-badge popular">Chai</div>
+                            <div class="food-card-img-box">
+                        <img src="assets/menu_milktea.webp" alt="Milk Tea" class="food-card-img" loading="lazy">
+                    </div>
+                    <div class="food-card-body">
+                        <h3 class="food-title">Milk Tea</h3>
+                                <span class="bengali-title">মিল্ক টি</span>
+                                <span class="food-price">&#8377;20</span>
+                        <a href="https://wa.me/917001404337?text=Hi%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20order%20Milk%20Tea%20(₹20)"
+                            target="_blank" class="food-order-btn">
+                            <i class="fab fa-whatsapp"></i> Order
+                        </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- No Results Fallback -->
+                    <div id="modal-no-results-msg"
+                        style="display: none; text-align: center; padding: 40px 20px; color: #aaa;">
+                        <i class="fas fa-search"
+                            style="font-size: 2.5rem; margin-bottom: 12px; display: block; color: var(--accent-gold);"></i>
+                        <p>আপনার খোঁজা অনুযায়ী কোনো খাবার পাওয়া যায়নি। অন্য কিছু লিখে খুঁজুন।</p>
+                    </div>
+                </div>
+
+                <!-- Direct Hotline Banner -->
+                <div id="modal-order-hotline" style="max-width: 1200px; margin: 35px auto 40px; padding: 0 15px;">
+                    <div class="order-info-banner glassmorphism" style="justify-content: center;">
+                        <div class="order-call-box" style="max-width: 600px; width: 100%;">
+                            <div class="call-badge">Direct Hotline</div>
+                            <h3>Call or WhatsApp to Place Order</h3>
+                            <a href="tel:+917001404337" class="order-phone-link">
+                                <i class="fas fa-phone-volume"></i> +91 7001404337
+                            </a>
+                            <div class="quick-action-btns">
+                                <a href="tel:+917001404337" class="direct-call-btn">
+                                    <i class="fas fa-phone"></i> Call Now
+                                </a>
+                                <a href="https://wa.me/917001404337?text=Hello%20Kalpadeep%20Cafe%20%26%20Restaurant,%20I%20want%20to%20place%20an%20order!"
+                                    target="_blank" class="direct-wp-btn">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp Order
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Message Panel Overlay -->
+    <div class="msg-panel-overlay" id="msg-panel-overlay"></div>
+
+    <!-- Slide-out Message Panel -->
+    <div class="msg-panel" id="msg-panel">
+        <button class="close-msg-panel-btn" id="close-msg-panel-btn">&times;</button>
+        <div class="msg-panel-header">
+            <h2>Send a Message</h2>
+            <p>We'd love to hear from you! Write to us and we'll save it to our sheet.</p>
+        </div>
+        <form id="msg-panel-form">
+            <div class="form-group">
+                <label for="msg-name">Your Name</label>
+                <input type="text" id="msg-name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="msg-email">Email or Phone</label>
+                <input type="text" id="msg-email" required placeholder="Enter email or phone number">
+            </div>
+            <div class="form-group">
+                <label for="msg-content">Message</label>
+                <textarea id="msg-content" rows="5" required placeholder="Type your message here..."></textarea>
+            </div>
+            <button type="submit" class="submit-msg-btn" id="submit-msg-btn">
+                <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+        <div class="msg-status-container" id="msg-status-container"></div>
+    </div>
+
+
+
+    <!-- Promo Poster Modal -->
+    <div class="promo-modal" id="promo-modal">
+        <div class="promo-modal-overlay"></div>
+        <div class="promo-modal-content">
+            <button class="promo-modal-close" id="close-promo-modal-btn" aria-label="Close Promo Modal"><i
+                    class="fas fa-times"></i></button>
+            <img src="assets/promo_poster.webp" alt="Rakhi Purnima Celebration" class="promo-poster-img">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
